@@ -29,7 +29,7 @@ export const site = {
   author: "晕晕", // required
   avatar: '/avatar_new.jpg', // required
   url: 'https://cocoa-yy.github.io', // required
-  baseUrl: '/my-blog', // When using GitHubPages, you must enter the repository name startWith '/'. e.g. '/astro-blog'
+  baseUrl: '/Tech-blog', // When using GitHubPages, you must enter the repository name startWith '/'. e.g. '/astro-blog'
   motto: '好奇 清醒 勇敢 改变世界',
   recentBlogSize: 5,
   archivePageSize: 25,
