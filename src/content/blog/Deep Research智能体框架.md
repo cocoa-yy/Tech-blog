@@ -11,10 +11,10 @@ ogImage: https://astro-yi.obs.cn-east-3.myhuaweicloud.com/avatar.png
 
 
 开源框架对比
-![rag-framework-comparison](/pic/DeepResearch/rag-framework-comparison.png)
+![rag-framework-comparison](/Tech-blog/pic/DeepResearch/rag-framework-comparison.png)
 
 闭源应用对比
-![深度研究闭源应用对比](/pic/DeepResearch/深度研究闭源应用对比.png)
+![深度研究闭源应用对比](/Tech-blog/pic/DeepResearch/深度研究闭源应用对比.png)
 
 # 基础框架-OpenAI 指南
 
@@ -119,7 +119,7 @@ ogImage: https://astro-yi.obs.cn-east-3.myhuaweicloud.com/avatar.png
 # ByteDance/DeerFlow 框架
 
 **分层多智能体系统**
-![DeerFlow框架](/pic/DeepResearch/DeerFlow框架.png)
+![DeerFlow框架](/Tech-blog/pic/DeepResearch/DeerFlow框架.png)
 
 ## 角色定义
 - **协调器 (Coordinator)**: 整个工作流的入口和管理者。接收用户的初始请求，启动研究流程，并在需要时将任务委派给规划器。协调器也作为用户和系统之间的主要交互界面。
@@ -137,7 +137,7 @@ ogImage: https://astro-yi.obs.cn-east-3.myhuaweicloud.com/avatar.png
 
 **SmolAgents的OpenDeepResearch模块 更轻量级、注重代码和简洁性的架构**
 *smol是small的俏皮用法，故smolagents的含义是“轻量的agent工具”
-![SmolAgents框架](/pic/DeepResearch/SmolAgents框架.png)
+![SmolAgents框架](/Tech-blog/pic/DeepResearch/SmolAgents框架.png)
 
 ## 角色定义
 - **CodeAgent**: 最主要的智能体类型，通过生成和执行 Python 代码来完成任务，并且可以调用预先定义好的工具。
@@ -164,12 +164,12 @@ Plan-Search-Reflect-Write (规划-搜索-反思-撰写)
 
 ## 实现方式
 ### 图状工作流 (Graph-based Workflow)
-![DeerFlow框架](/pic/DeepResearch/LangChain-Graph框架.png)
+![DeerFlow框架](/Tech-blog/pic/DeepResearch/LangChain-Graph框架.png)
 
 主要使用 LangGraph 库来构建。将研究的每一步（规划、搜索、反思等）都建模为图中的一个节点（Node），使得整个流程非常清晰、可追溯。特别强调人机协作（Human-in-the-Loop），允许用户在关键节点（如规划完成后）进行审查和提供反馈，然后再继续执行。这种实现方式控制力强，适合对报告质量和准确性要求极高的场景。
 
 ### Multi-agent 迭代循环 (Iterative Loop)
-![DeerFlow框架](/pic/DeepResearch/LangChain-Loop框架.png)
+![DeerFlow框架](/Tech-blog/pic/DeepResearch/LangChain-Loop框架.png)
 
 核心是递归的研究循环，在每一次循环中，智能体都会评估已有信息，生成新的问题，并进一步搜索，直到达到预设的深度（depth）和广度（breadth）。  
 - 简单模式 (Simple): 跳过初始的规划步骤，直接进入一个单一的、迭代的研究循环。这种模式速度更快，适用于较窄或较具体的研究问题。
