@@ -9,21 +9,9 @@ tags: [大模型, 行业大模型, 测评数据集]
 ogImage: https://astro-yi.obs.cn-east-3.myhuaweicloud.com/avatar.png
 ---
 
----
-date: 2025-08-18
-title: 行业大模型训练 Baichuan-M2
-description: 使用大型验证系统扩展医疗能力
-mermaid: true
-mathjax: true
-category: [大模型]
-tags: [大模型, 领域模型, 医疗]
-ogImage: https://astro-yi.obs.cn-east-3.myhuaweicloud.com/avatar.png
----
-
 参考链接：https://www.baichuan-ai.com/blog/baichuan-M2
 
 **Baichuan-M2**：增强型医疗推理模型，从现实世界的医疗问题出发，基于大规模验证系统进行强化学习训练，是目前世界上最佳的开源医疗模型。
-
 
 
 # 测评方法
