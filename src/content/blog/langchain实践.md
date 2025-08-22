@@ -1,6 +1,6 @@
 ---
 date: 2025-08-15
-title: langchain实践
+title: LangChain实践
 description: 
 mermaid: true
 mathjax: true
